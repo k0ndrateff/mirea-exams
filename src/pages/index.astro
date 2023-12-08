@@ -1,15 +1,46 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { Icon } from 'astro-icon';
 ---
 
 <Layout title="Welcome to Astro.">
 	<main>
-
+		<div class="intro-text">
+			<Icon name="snowflake" class="snowflake-icon" />
+			<h1>Это конспект к зимней сессии 2023—2024.</h1>
+			<p>Подходит группам ИВБО-06-22, ИВБО-07-22 и ИВБО-08-22.</p>
+		</div>
 	</main>
 </Layout>
 
 <style>
 	main {
+		margin: 64px 96px;
+	}
 
+	.intro-text {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+	}
+
+	h1 {
+		font-size: 48px;
+		font-weight: 600;
+	}
+
+	p {
+		font-size: 24px;
+		color: #343434;
+	}
+
+	.snowflake-icon {
+		position: absolute;
+		left: -54px;
+		top: 6px;
+		width: 40px;
+		height: 40px;
+		fill: url(#linear-gradient);
 	}
 </style>

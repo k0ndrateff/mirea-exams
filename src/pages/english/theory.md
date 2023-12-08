@@ -1,0 +1,34 @@
+**Преподаёт:** кафедра иностранных языков
+**Семинарист:** Филипская Анастасия Вадимовна
+
+## Вопросы к зачёту
+
+#### 1. History of computers
+
+**Термины:**
+1. Liquid Crystal Display (LCD) — Жидкокристаллический дисплей;
+2. Cathode Ray Tube (CRT) — Катодно-лучевая трубка;
+3. Organic light-emitting diode (OLED) — Органический светодиод;
+4. Performance — Производительность;
+5. Punched card — Перфокарта;
+6. Floppy disk — Дискета;
+7. Transistor — Транзистор;
+8. Integrated circuits — Интегральные схемы;
+9. Graphical User Interface — Графический интерфейс пользователя;
+10. Vacuum tubes — Электронные лампы;
+11. Compatible — Совместимый;
+12. Energy consumption — Энергопотребление;
+13. Feature — Особенность, возможность или характеристика.
+
+**Текст по теме:**
+The first counting tools people used were sticks and stones. However, as the human mind developed over time, new computing devices were designed starting with the invention of the abacus in China, around 1300 BC. It was used to perform basic arithmetical operations – addition, subtraction, multiplication, division. The first mechanical adding machine, *the Pascaline*, was built by Blaise Pascal, a French mathematician and scientist, between 1642 and 1644. *The Pascaline* was able to perform addition and subtraction in short time. The device was basically a wooden box with a number of gears and wheels.
+
+The first machine resembling today’s modern computers was *The Analytical Engine* designed in the 1830s by British mathematician Charles Babbage who is often called the father of the computer. He showed his machine at the exhibition in Paris in 1855.* The Analytical Engine* contained an ALU (arithmetic logic unit), control unit, memory, and an input/output system. These are the essential parts of a modern computer. Babbage never finished this work, but many of his ideas were the basis for building today’s computers.
+
+The 19<sup>th</sup> century was a period of a rapid evolution of computing theory and a number of calculating machines began to be used at that time. However, it wasn’t until the middle of the 20<sup>th</sup> century that a major breakthrough in computing technology was made. In 1936 Konrad Zuse, a German engineer, developed the Z1 machine, the first programmable mechanical computing device, which was later followed by the Z2 and the Z3. This series of inventions led to the advent of the first fully-functioning programmable electro-mechanical computer.
+
+The first generation of computers, which used vacuum tubes, came out in the 1940s. The milestone event was the invention of ENIAC (Electronic Numerical 5 Integrator and Computer) - the first general-purpose electronic digital computer working on vacuum tubes. The project was completed by two engineers at the University of Pennsylvania, John Mauchly and J. Presper Eckert, in 1946. Another important advancement in computers came in 1947, when John von Neumann developed the idea of keeping instructions for the computer inside the computer’s memory. UNIVAC I (Universal Automatic Computer), built in 1951, became the first commercially produced digital computer in the United States.
+
+In the late 1950s and early 1960s, the second generation of computers was developed and could work ten times faster than their predecessors. The reason for this high speed was the use of transistors instead of vacuum tubes. The size of the computer also became smaller. The third-generation computers appeared on the market between 1965 and 1972. These computers could do a million calculations per second, which is 1000 times faster than the first-generation computers. Unlike second-generation computers, these were controlled by tiny integrated circuits and were consequently smaller.
+
+In the fourth-generation computers, integrated circuits were greatly reduced in size, which was due to microminiaturization. In these computers, which came out in the mid- to late 1970s, 1000 tiny circuits could fit onto a single chip. Microprocessors even moved beyond the realm of computers and into an increasing number of everyday products. The fifth generation of computers, which is being developed nowadays, is based on parallel processing and Artificial Intelligence, a technology that has many potential applications around the world.

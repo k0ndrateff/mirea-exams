@@ -29,13 +29,18 @@ const { heading, icon, link, hoverColor } = Astro.props;
 
     border: 1px solid black;
     border-radius: 12px;
-  }
+    transition: 500ms;
 
-  .root:hover {
-    border: 1px solid var(--hcolor);
+    &:hover {
+      border: 1px solid #00c8ff;
+      color: #0096ff;
+      background: #00c8ff0a;
+      transition: none;
 
-    .icon {
-      fill: var(--hcolor);
+      .icon {
+        fill: #ff8100;
+        transition: none;
+      }
     }
   }
 
@@ -50,5 +55,7 @@ const { heading, icon, link, hoverColor } = Astro.props;
     right: 8px;
     width: 64px;
     height: auto;
+
+    transition: 500ms;
   }
 </style>

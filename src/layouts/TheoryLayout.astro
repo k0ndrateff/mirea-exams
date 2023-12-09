@@ -46,6 +46,18 @@ const { frontmatter } = Astro.props;
 <style>
   main {
     padding: 64px 96px;
+
+    @media (max-width: 1260px) {
+      padding: 48px 64px;
+    }
+
+    @media (max-width: 900px) {
+      padding: 36px 32px;
+    }
+
+    @media (max-width: 700px) {
+      padding: 24px 16px;
+    }
   }
 
   .content {
@@ -62,6 +74,10 @@ const { frontmatter } = Astro.props;
     position: relative;
     display: flex;
     flex-direction: column;
+
+    @media (max-width: 700px) {
+      align-items: center;
+    }
   }
 
   .subheader {
@@ -72,6 +88,19 @@ const { frontmatter } = Astro.props;
   h1 {
     font-size: 48px;
     font-weight: 600;
+
+    @media (max-width: 1260px) {
+      font-size: 40px;
+    }
+
+    @media (max-width: 900px) {
+      font-size: 32px;
+    }
+
+    @media (max-width: 700px) {
+      font-size: 28px;
+      text-align: center;
+    }
   }
 
   .icon {
@@ -80,6 +109,25 @@ const { frontmatter } = Astro.props;
     top: 6px;
     width: 40px;
     height: 40px;
+    flex-shrink: 0;
+
+    @media (max-width: 1260px) {
+      left: -42px;
+      top: 4px;
+      width: 32px;
+      height: 32px;
+    }
+
+    @media (max-width: 900px) {
+      left: -26px;
+      top: 6px;
+      width: 20px;
+      height: 20px;
+    }
+
+    @media (max-width: 700px) {
+      display: none;
+    }
   }
 
   .back-link {
@@ -96,6 +144,19 @@ const { frontmatter } = Astro.props;
       color: #0050f0;
       border-bottom: 0.5px solid #0050f0;
       transition: none;
+    }
+
+    @media (max-width: 1260px) {
+      top: -30px;
+    }
+
+    @media (max-width: 900px) {
+      font-size: 14px;
+      top: -22px;
+    }
+
+    @media (max-width: 700px) {
+      align-self: flex-start;
     }
   }
 </style>

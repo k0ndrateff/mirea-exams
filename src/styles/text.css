@@ -4,16 +4,40 @@ h4 {
   font-weight: 500;
 
   margin-bottom: 12px;
+
+  @media (max-width: 900px) {
+    font-size: 26px;
+    line-height: 38px;
+  }
+
+  @media (max-width: 700px) {
+    font-size: 24px;
+    line-height: 36px;
+  }
 }
 
 h4:not(:first-child) {
   margin-top: 64px;
+
+  @media (max-width: 700px) {
+    margin-top: 48px;
+  }
 }
 
 h5 {
   font-size: 26px;
   line-height: 38px;
   font-weight: 600;
+
+  @media (max-width: 900px) {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  @media (max-width: 700px) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 h5:not(:first-child) {
@@ -24,6 +48,11 @@ h6 {
   font-size: 24px;
   line-height: 36px;
   font-weight: 600;
+
+  @media (max-width: 900px) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 h6:not(:first-child) {
@@ -36,6 +65,16 @@ p {
 
   margin-top: 12px;
   margin-bottom: 12px;
+
+  @media (max-width: 900px) {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  @media (max-width: 700px) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 li {
@@ -45,6 +84,16 @@ li {
   &::marker {
     color: #666666;
   }
+
+  @media (max-width: 900px) {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  @media (max-width: 700px) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 ul, ol {
@@ -53,6 +102,10 @@ ul, ol {
   gap: 12px;
 
   margin-left: 36px;
+
+  @media (max-width: 900px) {
+    margin-left: 28px;
+  }
 }
 
 ul {

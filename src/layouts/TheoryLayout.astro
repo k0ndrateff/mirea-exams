@@ -28,6 +28,7 @@ const { frontmatter } = Astro.props;
   <main>
     <div class="content">
       <div class="intro">
+        <a href="/" class="back-link">← На главную</a>
         <Icon name={frontmatter.icon} class="icon" />
         <h1>{frontmatter.title}</h1>
         <p class="subheader">{frontmatter.subheader}</p>
@@ -60,12 +61,11 @@ const { frontmatter } = Astro.props;
     position: relative;
     display: flex;
     flex-direction: column;
-    gap: 8px;
   }
 
   .subheader {
-    font-size: 18px;
-    color: #343434;
+    font-size: 16px;
+    color: #454545;
   }
 
   h1 {
@@ -79,5 +79,22 @@ const { frontmatter } = Astro.props;
     top: 6px;
     width: 40px;
     height: 40px;
+  }
+
+  .back-link {
+    position: absolute;
+    top: -40px;
+    font-size: 16px;
+    color: #0096ff;
+    border-bottom: 0.5px solid #0096ff;
+    box-sizing: content-box;
+    padding: 1px;
+    transition: 400ms ease;
+
+    &:hover {
+      color: #0050f0;
+      border-bottom: 0.5px solid #0050f0;
+      transition: none;
+    }
   }
 </style>

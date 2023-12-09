@@ -1,14 +1,39 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import { Icon } from 'astro-icon';
+import DisciplineBlock from "../components/DisciplineBlock.astro";
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Зимняя сессия 2023—2024">
 	<main>
-		<div class="intro-text">
-			<Icon name="snowflake" class="snowflake-icon" />
-			<h1>Это конспект к зимней сессии 2023—2024.</h1>
-			<p>Подходит группам ИВБО-06-22, ИВБО-07-22 и ИВБО-08-22.</p>
+		<div class="content">
+			<div class="intro-text">
+				<Icon name="snowflake" class="snowflake-icon" />
+				<h1>Это конспект к зимней сессии 2023—2024.</h1>
+				<p>Подходит группам ИВБО-06-22, ИВБО-07-22 и ИВБО-08-22.</p>
+			</div>
+
+			<div class="disciplines-block">
+				<h2>Дисциплины</h2>
+
+				<div class="disciplines">
+					<DisciplineBlock heading="Архитектура вычислительных машин и систем"
+													 link="/avmis/theory"
+													 icon="robotic-arm"
+													 color="#555555"
+					/>
+					<DisciplineBlock heading="Вычислительная математика" link="/comp-maths/theory" icon="abacus" />
+					<DisciplineBlock heading="Английский язык" link="/avmis/theory" icon="tickets" />
+					<DisciplineBlock heading="Информационно-технологическая инфраструктура" link="/infrastructure/theory" icon="flipchart" />
+					<DisciplineBlock heading="Математический анализ" link="/calculus/theory" icon="chart-up" />
+					<DisciplineBlock heading="Предметно-ориентированные информационные системы" link="/pois/theory" icon="warehouse" />
+					<DisciplineBlock heading="Программирование на языке Джава" link="/java/theory" icon="programming" />
+					<DisciplineBlock heading="Физическая культура и спорт" link="/sports/theory" icon="weightlifter" />
+					<DisciplineBlock heading="Философия" link="/philosophy/theory" icon="lincoln" />
+					<DisciplineBlock heading="Экономическая культура" link="/economics/theory" icon="wallet" />
+					<DisciplineBlock heading="Электротехника" link="/electro/theory" icon="lightning-rod" />
+				</div>
+			</div>
 		</div>
 	</main>
 </Layout>
@@ -18,6 +43,12 @@ import { Icon } from 'astro-icon';
 		margin: 64px 96px;
 	}
 
+	.content {
+		display: flex;
+		flex-direction: column;
+		gap: 96px;
+	}
+
 	.intro-text {
 		position: relative;
 		display: flex;
@@ -25,8 +56,26 @@ import { Icon } from 'astro-icon';
 		gap: 16px;
 	}
 
+	.disciplines-block {
+		display: flex;
+		flex-direction: column;
+		gap: 32px;
+	}
+
+	.disciplines {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-auto-rows: auto;
+		gap: 24px;
+	}
+
 	h1 {
 		font-size: 48px;
+		font-weight: 600;
+	}
+
+	h2 {
+		font-size: 36px;
 		font-weight: 600;
 	}
 

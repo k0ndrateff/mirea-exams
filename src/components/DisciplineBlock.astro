@@ -7,7 +7,7 @@ interface Props {
   link: string;
 }
 
-const { heading, icon, link, hoverColor } = Astro.props;
+const { heading, icon, link } = Astro.props;
 ---
 
 <a href={link}>
@@ -18,7 +18,7 @@ const { heading, icon, link, hoverColor } = Astro.props;
   </div>
 </a>
 
-<style define:vars={{hcolor: hoverColor}}>
+<style>
   .root {
     position: relative;
     width: 100%;

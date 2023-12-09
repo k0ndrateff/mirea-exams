@@ -7,6 +7,8 @@ import typograf from "astro-typograf";
 
 // https://astro.build/config
 export default defineConfig({
+  site: 'https://k0ndrateff.github.io',
+  base: '/mirea-exams',
   integrations: [mdx({
     remarkPlugins: [remarkMath],
     rehypePlugins: [rehypeKatex]

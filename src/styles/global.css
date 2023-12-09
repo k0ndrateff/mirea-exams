@@ -1,11 +1,7 @@
-:root {
-
-}
-
 html {
   font-family: 'Golos Text Variable', sans-serif;
 }
 
-body {
-
+code {
+  font-family: 'JetBrains Mono', monospace;
 }

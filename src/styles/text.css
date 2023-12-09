@@ -10,6 +10,26 @@ h4:not(:first-child) {
   margin-top: 64px;
 }
 
+h5 {
+  font-size: 26px;
+  line-height: 38px;
+  font-weight: 600;
+}
+
+h5:not(:first-child) {
+  margin-top: 36px;
+}
+
+h6 {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 600;
+}
+
+h6:not(:first-child) {
+  margin-top: 32px;
+}
+
 p {
   font-size: 20px;
   line-height: 32px;
@@ -49,4 +69,37 @@ i, em {
 
 strong {
   font-weight: 600;
+}
+
+th, td {
+  padding: 12px;
+  font-size: 18px;
+}
+
+thead {
+  border-bottom: 1px solid #666666;
+}
+
+thead > tr > th {
+  font-weight: 600;
+}
+
+pre {
+  padding: 8px;
+  border-radius: 8px;
+  counter-reset: line;
+}
+
+pre code span.line {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+pre code span.line:before {
+  counter-increment: line;
+  content: counter(line);
+  display: inline-block;
+  padding: 0 .5em;
+  margin-right: .5em;
+  color: #888;
 }

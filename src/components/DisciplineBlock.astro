@@ -41,11 +41,26 @@ const { heading, icon, link } = Astro.props;
         transition: none;
       }
     }
+
+    @media (max-width: 700px) {
+      padding: 12px;
+      min-height: 90px;
+    }
   }
 
   h3 {
     font-size: 24px;
     line-height: 38px;
+
+    @media (max-width: 1410px) {
+      font-size: 20px;
+      line-height: 34px;
+    }
+
+    @media (max-width: 700px) {
+      font-size: 18px;
+      line-height: 28px;
+    }
   }
 
   .icon {
@@ -54,7 +69,13 @@ const { heading, icon, link } = Astro.props;
     right: 8px;
     width: 64px;
     height: auto;
+    z-index: 2;
+    mix-blend-mode: difference;
 
     transition: 500ms;
+
+    @media (max-width: 1260px) {
+      width: 52px;
+    }
   }
 </style>

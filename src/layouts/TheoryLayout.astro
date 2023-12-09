@@ -1,0 +1,83 @@
+---
+import { Icon } from 'astro-icon';
+import '@fontsource-variable/golos-text';
+import '../styles/reset.css';
+import '../styles/global.css';
+import '../styles/text.css';
+
+const { frontmatter } = Astro.props;
+---
+
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Конспект по всем дисциплинам 2-го курса потока ИВБО кафедры ППИ за 3 семестр" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+            integrity="sha384-MlJdn/WNKDGXveldHDdyRP1R4CTHr3FeuDNfhsLPYrq2t0UBkUdK2jyTnXPEK1NQ"
+            crossorigin="anonymous"
+    />
+    <meta name="generator" content={Astro.generator} />
+    <title>{frontmatter.title}</title>
+  </head>
+  <body>
+  <main>
+    <div class="content">
+      <div class="intro">
+        <Icon name={frontmatter.icon} class="icon" />
+        <h1>{frontmatter.title}</h1>
+        <p class="subheader">{frontmatter.subheader}</p>
+      </div>
+
+      <div class="text">
+        <slot />
+      </div>
+    </div>
+  </main>
+  </body>
+</html>
+
+<style>
+  main {
+    padding: 64px 96px;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+  }
+
+  .text {
+    max-width: 1280px;
+  }
+
+  .intro {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .subheader {
+    font-size: 18px;
+    color: #343434;
+  }
+
+  h1 {
+    font-size: 48px;
+    font-weight: 600;
+  }
+
+  .icon {
+    position: absolute;
+    left: -54px;
+    top: 6px;
+    width: 40px;
+    height: 40px;
+  }
+</style>

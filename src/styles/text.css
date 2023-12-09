@@ -1,0 +1,52 @@
+h4 {
+  font-size: 28px;
+  line-height: 40px;
+  font-weight: 500;
+
+  margin-bottom: 12px;
+}
+
+h4:not(:first-child) {
+  margin-top: 64px;
+}
+
+p {
+  font-size: 20px;
+  line-height: 32px;
+
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+li {
+  font-size: 20px;
+  line-height: 32px;
+
+  &::marker {
+    color: #666666;
+  }
+}
+
+ul, ol {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  margin-left: 36px;
+}
+
+ul {
+  list-style-type: disc;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+i, em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: 600;
+}

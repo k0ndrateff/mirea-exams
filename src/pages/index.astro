@@ -31,11 +31,63 @@ import DisciplineBlock from "../components/DisciplineBlock.astro";
 				</div>
 			</div>
 		</div>
+
+		<div class="about">
+			<h2>Как пользоваться конспектом</h2>
+			<p class="about-text">
+				Каждая страница теории состоит из вопросов к аттестации и ответов на них.
+				Вопросы и учебный материал взяты из <span>СДО</span> и открытых источников.<br/>
+				Материал обновляется ежедневно.
+			</p>
+
+			<p class="about-text desk">
+				Чтобы найти нужный вопрос, используйте встроенный поиск браузера:
+				<nobr><kbd>Ctrl + F</kbd> на Виндоусе</nobr>, <nobr><kbd>⌘ + F</kbd> на Маке.</nobr>
+			</p>
+
+			<p class="about-text mob">
+				Чтобы найти нужный вопрос, используйте встроенный поиск браузера.
+			</p>
+
+			<Icon name="love" class="work-icon" />
+		</div>
 	</main>
 </Layout>
 
 <style>
 	main {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.content {
+		display: flex;
+		flex-direction: column;
+		gap: 96px;
+
+		min-height: 100dvh;
+		padding: 64px 96px;
+
+		@media (max-width: 1260px) {
+			padding: 48px 64px;
+		}
+
+		@media (max-width: 900px) {
+			gap: 48px;
+			padding: 24px 32px;
+		}
+
+		@media (max-width: 700px) {
+			padding: 12px 16px;
+		}
+	}
+
+	.about {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		gap: 24px;
+
 		padding: 64px 96px;
 
 		@media (max-width: 1260px) {
@@ -51,14 +103,31 @@ import DisciplineBlock from "../components/DisciplineBlock.astro";
 		}
 	}
 
-	.content {
-		display: flex;
-		flex-direction: column;
-		gap: 96px;
+	.about-text {
+		line-height: 160%;
+		max-width: 1000px;
 
-		@media (max-width: 900px) {
-			gap: 48px;
+		&.desk {
+			display: block;
+
+			@media (max-width: 700px) {
+				display: none;
+			}
 		}
+
+		&.mob {
+			display: none;
+
+			@media (max-width: 700px) {
+				display: block;
+			}
+		}
+	}
+
+	kbd {
+		padding: 2px;
+		border: 1px solid #666666;
+		border-radius: 8px;
 	}
 
 	.intro-text {
@@ -179,6 +248,19 @@ import DisciplineBlock from "../components/DisciplineBlock.astro";
 		}
 
 		@media (max-width: 700px) {
+			display: none;
+		}
+	}
+
+	.work-icon {
+		position: absolute;
+		width: 15vw;
+		height: auto;
+		right: 70px;
+		bottom: 48px;
+		fill: url(#linear-grad);
+
+		@media (max-width: 1260px) {
 			display: none;
 		}
 	}

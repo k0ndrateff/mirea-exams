@@ -1,0 +1,13 @@
+<svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="29 66 93 78">
+    <defs>
+        <style>.cls-1{fill-rule:evenodd;}</style>
+        <linearGradient id="linear-grad" x1="107.85" y1="138.16" x2="41.91" y2="72.23"
+                        gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#D31027"/>
+            <stop offset="1" stop-color="#EA384D"/>
+        </linearGradient>
+    </defs>
+    <title>Монтажная область 41</title>
+    <path class="cls-1"
+          d="M119.67,99.43c-2.15,19.85-29.83,33.88-52,44.25C49.41,127.44,27.31,106,30.43,86c3.64-23.31,31.37-26,46.9-6.08L82.23,87l4.3-1.85-3.09-9C103.37,64.73,122,77.61,119.67,99.43Z"/>
+</svg>

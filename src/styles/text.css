@@ -85,6 +85,14 @@ li {
     color: #666666;
   }
 
+  &:has(input[type='checkbox']) {
+    color: #ff0033;
+  }
+
+  &:has(input[type='checkbox'][checked]) {
+    color: #009900;
+  }
+
   @media (max-width: 900px) {
     font-size: 18px;
     line-height: 28px;
@@ -110,6 +118,11 @@ ul, ol {
 
 ul {
   list-style-type: disc;
+
+  &.contains-task-list {
+    list-style-type: none;
+    margin-left: 0;
+  }
 }
 
 ol {
@@ -155,4 +168,8 @@ pre code span.line:before {
   padding: 0 .5em;
   margin-right: .5em;
   color: #888;
+}
+
+input[type='checkbox'] {
+  display: none;
 }

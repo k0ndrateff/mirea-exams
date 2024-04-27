@@ -4,17 +4,33 @@ import { Icon } from 'astro-icon';
 import DisciplineBlock from "../components/DisciplineBlock.astro";
 ---
 
-<Layout title="Зимняя сессия 2023—2024">
+<Layout title="Летняя сессия 2023—2024">
 	<main>
 		<div class="content">
 			<div class="intro-text">
-				<Icon name="snowflake" class="snowflake-icon" />
-				<h1>Это конспект к зимней сессии <nobr>2023—2024.</nobr></h1>
-				<p>Материал третьего семестра <nobr>потока <span>ИВБО</span></nobr> <nobr>кафедры <span>ППИ</span></nobr></p>
+				<Icon name="sakura" class="main-icon"/>
+				<h1>Это конспект к <span class="highlight">летней</span> сессии <nobr>2023—2024.</nobr></h1>
+				<p>Материал четвертого семестра <nobr>потока <span>ИВБО</span></nobr> <nobr>кафедры <span>ППИ</span></nobr></p>
 			</div>
 
 			<div class="disciplines-block">
 				<h2>Дисциплины</h2>
+
+				<div class="disciplines">
+					<DisciplineBlock heading="Анализ и концептуальное моделирование систем" link="/mirea-exams/avmis/theory" icon="divider" />
+					<DisciplineBlock heading="Английский язык" link="/mirea-exams/english/theory" icon="passport" />
+					<DisciplineBlock heading="Программирование на языке Питон" link="/mirea-exams/infrastructure/theory" icon="mac" />
+					<DisciplineBlock heading="Проектирование баз данных" link="/mirea-exams/calculus/theory" icon="cloud" />
+					<DisciplineBlock heading="Системное программное обеспечение" link="/mirea-exams/pois/theory" icon="console" />
+					<DisciplineBlock heading="Социальная психология и педагогика" link="/mirea-exams/java/theory" icon="psychology" />
+					<DisciplineBlock heading="Схемотехника устройств компьютерных систем" link="/mirea-exams/sports/theory" icon="processor" />
+					<DisciplineBlock heading="Теория вероятностей и математическая статистика" link="/mirea-exams/philosophy/theory" icon="cards" />
+					<DisciplineBlock heading="Технологии передачи данных" link="/mirea-exams/economics/theory" icon="router" />
+				</div>
+			</div>
+
+			<div class="disciplines-block">
+				<h2>Материалы прошлой сессии</h2>
 
 				<div class="disciplines">
 					<DisciplineBlock heading="Архитектура вычислительных машин и систем" link="/mirea-exams/avmis/theory" icon="robotic-arm" />
@@ -124,6 +140,14 @@ import DisciplineBlock from "../components/DisciplineBlock.astro";
 		}
 	}
 
+	.highlight {
+		background: linear-gradient(to right, #f12711 0%, #f5af19 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+
+		color: $f12711;
+	}
+
 	kbd {
 		padding: 2px;
 		border: 1px solid #666666;
@@ -224,7 +248,7 @@ import DisciplineBlock from "../components/DisciplineBlock.astro";
 		}
 	}
 
-	.snowflake-icon {
+	.main-icon {
 		position: absolute;
 		left: -54px;
 		top: 6px;

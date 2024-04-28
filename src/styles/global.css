@@ -1,3 +1,38 @@
+* {
+  --error: #ff0033;
+  --success: #009900;
+
+  --background-main: #ffffff;
+  --background-block: #ffffff;
+
+  --primary-text: #000000;
+  --secondary-text: #343434;
+  --attenuated: #666666;
+  --attenuated-light: #888888;
+
+  --summer-theme-red: #f12711;
+  --summer-theme-orange: #f5af19;
+  --summer-theme-gradient: linear-gradient(to right, var(--summer-theme-red) 0%, var(--summer-theme-orange) 100%);
+
+  --winter-theme-light: #0096ff;
+  --winter-theme-dark: #0050f0;
+
+  --shadow-main: 0 4px 4px rgba(0, 0, 0, 0.25);
+  --shadow-pressed: 0 2px 2px rgba(0, 0, 0, 0.25);
+  
+  @media (prefers-color-scheme: dark) {
+    --background-main: #1d1d1d;
+    --background-block: #242424;
+
+    --primary-text: #ffffff;
+    --secondary-text: #cbcbcb;
+    --attenuated: #cac8c8;
+
+    --shadow-main: 0 4px 4px rgba(255, 255, 255, 0.25);
+    --shadow-pressed: 0 2px 2px rgba(255, 255, 255, 0.25);
+  }
+}
+
 html {
   font-family: 'Golos Text Variable', sans-serif;
 }

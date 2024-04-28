@@ -74,6 +74,8 @@ import DisciplineBlock from "../components/DisciplineBlock.astro";
 	main {
 		display: flex;
 		flex-direction: column;
+
+		background: var(--background-main);
 	}
 
 	.content {
@@ -141,16 +143,16 @@ import DisciplineBlock from "../components/DisciplineBlock.astro";
 	}
 
 	.highlight {
-		background: linear-gradient(to right, #f12711 0%, #f5af19 100%);
+		background: var(--summer-theme-gradient);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 
-		color: $f12711;
+		color: var(--summer-theme-red);
 	}
 
 	kbd {
 		padding: 2px;
-		border: 1px solid #666666;
+		border: 1px solid var(--attenuated);
 		border-radius: 8px;
 	}
 
@@ -199,6 +201,8 @@ import DisciplineBlock from "../components/DisciplineBlock.astro";
 		font-size: 48px;
 		font-weight: 600;
 
+		color: var(--primary-text);
+
 		@media (max-width: 1260px) {
 			font-size: 40px;
 		}
@@ -217,6 +221,8 @@ import DisciplineBlock from "../components/DisciplineBlock.astro";
 		font-size: 36px;
 		font-weight: 600;
 
+		color: var(--primary-text);
+
 		@media (max-width: 1260px) {
 			font-size: 32px;
 		}
@@ -232,7 +238,7 @@ import DisciplineBlock from "../components/DisciplineBlock.astro";
 
 	p {
 		font-size: 24px;
-		color: #343434;
+		color: var(--attenuated);
 
 		span {
 			font-variant: small-caps;

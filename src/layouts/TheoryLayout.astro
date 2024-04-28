@@ -46,6 +46,7 @@ const { frontmatter } = Astro.props;
 <style>
   main {
     padding: 64px 96px;
+    background: var(--background-main);
 
     @media (max-width: 1260px) {
       padding: 48px 64px;
@@ -86,12 +87,14 @@ const { frontmatter } = Astro.props;
 
   .subheader {
     font-size: 16px;
-    color: #454545;
+    color: var(--attenuated);
   }
 
   h1 {
     font-size: 48px;
     font-weight: 600;
+
+    color: var(--primary-text);
 
     @media (max-width: 1260px) {
       font-size: 40px;
@@ -138,15 +141,15 @@ const { frontmatter } = Astro.props;
     position: absolute;
     top: -40px;
     font-size: 16px;
-    color: #0096ff;
-    border-bottom: 0.5px solid #0096ff;
+    color: var(--winter-theme-light);
+    border-bottom: 0.5px solid var(--winter-theme-light);
     box-sizing: content-box;
     padding: 1px;
     transition: 400ms ease;
 
     &:hover {
-      color: #0050f0;
-      border-bottom: 0.5px solid #0050f0;
+      color: var(--winter-theme-dark);
+      border-bottom: 0.5px solid var(--winter-theme-dark);
       transition: none;
     }
 

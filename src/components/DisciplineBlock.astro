@@ -26,12 +26,13 @@ const { heading, icon, link } = Astro.props;
     min-height: 156px;
     padding: 16px;
 
+    background: var(--background-block);
     border-radius: 16px;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: var(--shadow-main);
     transition: 500ms;
 
     &:hover {
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+      box-shadow: var(--shadow-pressed);
       transition: none;
     }
 
@@ -45,6 +46,7 @@ const { heading, icon, link } = Astro.props;
     font-size: 24px;
     font-weight: 500;
     line-height: 38px;
+    color: var(--primary-text);
 
     @media (max-width: 1410px) {
       font-size: 20px;
@@ -64,9 +66,8 @@ const { heading, icon, link } = Astro.props;
     width: 72px;
     height: auto;
     z-index: 2;
-    mix-blend-mode: difference;
     flex-shrink: 0;
-    fill: black;
+    fill: var(--primary-text);
 
     transition: 500ms;
 

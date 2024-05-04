@@ -177,3 +177,23 @@ pre code span.line:before {
 input[type='checkbox'] {
   display: none;
 }
+
+blockquote {
+  border-radius: 8px;
+  border: 1px solid var(--summer-theme-red);
+  padding: 8px 16px;
+
+  & > p > a {
+    color: var(--summer-theme-red);
+    border-bottom: 0.5px solid var(--summer-theme-red);
+    box-sizing: content-box;
+    padding: 1px;
+    transition: 400ms ease;
+
+    &:hover {
+      color: var(--summer-theme-orange);
+      border-bottom: 0.5px solid var(--summer-theme-orange);
+      transition: none;
+    }
+  }
+}

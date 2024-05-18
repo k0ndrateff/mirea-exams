@@ -1,5 +1,6 @@
 ---
 import { Icon } from 'astro-icon';
+import { systemSoftwareLinks } from "../constructors/SystemSoftwareLinks";
 import '@fontsource-variable/golos-text';
 import '@fontsource/jetbrains-mono';
 import '../styles/reset.css';
@@ -33,6 +34,14 @@ const { frontmatter } = Astro.props;
         <Icon name={frontmatter.icon} class="icon" />
         <h1>{frontmatter.title}</h1>
         <p class="subheader">{frontmatter.subheader}</p>
+
+        {frontmatter.links === 'system-software' && (
+          <div class="links">
+            {systemSoftwareLinks(frontmatter.activeLinkIdx).map(link => (
+              <a href={link.href} class:list={[ 'link', { active: link.active } ]}>{link.title}</a>
+            ))}
+          </div>
+        )}
       </div>
 
       <div class="text">
@@ -164,6 +173,32 @@ const { frontmatter } = Astro.props;
 
     @media (max-width: 700px) {
       align-self: flex-start;
+    }
+  }
+
+  .links {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .link {
+    font-size: 16px;
+    padding: 4px;
+    border-radius: 4px;
+
+    color: var(--summer-theme-orange);
+    transition: 200ms ease;
+
+    &:hover {
+      color: var(--summer-theme-red);
+    }
+
+    &.active {
+      background: var(--summer-theme-orange);
+      color: var(--secondary-text);
+
+      pointer-events: none;
     }
   }
 </style>

@@ -47,4 +47,8 @@ code {
 
 math {
   overflow: auto hidden;
+
+  * {
+    color: var(--primary-text);
+  }
 }
